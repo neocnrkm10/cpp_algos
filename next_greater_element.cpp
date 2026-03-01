@@ -6,12 +6,12 @@ void next_g(int arr[], int len){
     int new_arr[len];
 
     for(int i = 0; i < len; i++){
-        new_arr[i] = -1;   // assume no greater element
+        new_arr[i] = -1;   
 
         for(int j = i + 1; j < len; j++){
             if(arr[j] > arr[i]){
                 new_arr[i] = arr[j];
-                break;     // stop once found
+                break;     
             }
         }
     }
